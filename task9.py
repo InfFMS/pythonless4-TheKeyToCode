@@ -7,15 +7,15 @@
 def is_stepen_of_2(n):
     if(n<=0):
         return False
-    while n!=1:
-        if n%2==0:
-            n=n/2
-        else:
-            if(n!=1):
-                return False
-    return True
-
+    if n%2==0:
+        n=n//2
+    else:
+        # print(n==1)
+        return (n==1)
+    # print(n)
+    return is_stepen_of_2(n)
 i = int(input("Введите число: "))
+# print(is_stepen_of_2(i))
 if(is_stepen_of_2(i)):
     print("YES")
 else:

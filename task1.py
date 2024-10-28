@@ -10,6 +10,8 @@
 # ********
 # *********
 # **********
+def fun(n):
+    for i in range(1,n+1):
+        print("*"*i)
 n = int(input("Введите длину катетов: "))
-for i in range(1,n+1):
-    print("*"*i)
+fun(n)
