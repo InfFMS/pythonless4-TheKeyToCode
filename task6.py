@@ -9,3 +9,14 @@
 # Вывод:
 # 5 3
 
+def GCD(a,b): #greatest common divisor
+    while(a!=b):
+        if(a>b):
+            a=a-b
+        else:
+            b=b-a
+    return a
+
+a, b = map(int,input("Введите 2 числа в 1 строку: ").split())
+gcd = GCD(a,b);
+print(int(a/gcd), int(b/gcd))
